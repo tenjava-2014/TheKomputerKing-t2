@@ -1,6 +1,8 @@
 package com.tenjava.entries.TheKomputerKing.t2;
 
+import com.tenjava.entries.TheKomputerKing.t2.generators.MobTrapGenerator;
 import java.util.logging.Logger;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -20,6 +22,11 @@ public class Generators extends JavaPlugin {
     public void onEnable() {
         instance = this;
         logger = this.getLogger();
+        
+        Bukkit.getPluginManager().registerEvents(new MobTrapGenerator(), this);
+        
+        GeneratorManager.initialize();
+        Bukkit.getPluginManager().registerEvents(GeneratorManager.get(), this);
     }
     
     /**

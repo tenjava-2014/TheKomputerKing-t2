@@ -1,7 +1,6 @@
 package com.tenjava.entries.TheKomputerKing.t2.generators;
 
 import com.tenjava.entries.TheKomputerKing.t2.GeneratorManager;
-import java.util.*;
 import org.bukkit.*;
 import org.bukkit.block.BlockFace;
 import org.bukkit.entity.Creature;
@@ -36,6 +35,8 @@ public class MobTrapGenerator implements EnergyGenerator, Listener {
             Location testing = event.getBlock().getRelative(BlockFace.DOWN).getLocation();
             if (testing.getBlock().getType().equals(Material.GOLD_BLOCK)) {
                 // It's probably a generator, now let's add some fuel.
+                event.getEntity().getWorld().createExplosion(event.getEntity().getLocation(), 0);
+                event.getEntity().remove();
                 GeneratorManager.get().addFuel(testing, 5);
             }
         }
