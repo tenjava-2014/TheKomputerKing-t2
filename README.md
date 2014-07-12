@@ -1,4 +1,4 @@
-TheKomputerKing's ten.java submission
+TheKomputerKing's ten.java submission (not completed ;p)
 ==============================
 
 [![ten.java](https://cdn.mediacru.sh/hu4CJqRD7AiB.svg)](https://tenjava.com/)
@@ -28,8 +28,6 @@ Maven will download all required dependencies and build a ready-for-use plugin p
 Usage
 -----
 
-1. Install plugin
-2. Do things with it
-
+Place a gold block with a golden pressure plate on top of it. When mobs walk over the pressure plate, 3 coal will be generated. To get all the coal that has built up in the generator, just break the gold block. You will be able to place it back down again.
 <!-- Hi, TheKomputerKing! This is the default README for every ten.java submission. -->
 <!-- We encourage you to edit this README with some information about your submission – keep in mind you'll be scored on documentation! -->

@@ -37,7 +37,7 @@ public class MobTrapGenerator implements EnergyGenerator, Listener {
                 // It's probably a generator, now let's add some fuel.
                 event.getEntity().getWorld().createExplosion(event.getEntity().getLocation(), 0);
                 event.getEntity().remove();
-                GeneratorManager.get().addFuel(testing, 5);
+                GeneratorManager.get().addFuel(testing, 3);
             }
         }
     }
