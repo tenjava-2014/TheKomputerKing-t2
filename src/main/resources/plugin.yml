@@ -1,4 +1,4 @@
-name: Powerups
+name: Generators
 author: TheKomputerKing
-main: com.tenjava.entries.TheKomputerKing.t2.Powerups
+main: com.tenjava.entries.TheKomputerKing.t2.Generators
 version: ${project.version}-${git.commit.id.abbrev}
