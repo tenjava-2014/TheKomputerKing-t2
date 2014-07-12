@@ -13,16 +13,27 @@ public class Generators extends JavaPlugin {
     private static Logger logger;
     private static Generators instance;
     
+    /**
+     * Called when the plugin is enabled.
+     */
     @Override
     public void onEnable() {
         instance = this;
         logger = this.getLogger();
     }
     
+    /**
+     * Gets the current instance of the plugin.
+     * @return plugin
+     */
     public static Generators get() {
         return instance;
     }
     
+    /**
+     * Gets the current logger for the plugin.
+     * @return logger
+     */
     public static Logger logger() {
         return logger;
     }
